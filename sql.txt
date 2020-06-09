@@ -2,10 +2,10 @@
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Июн 09 2020 г., 16:26
--- Версия сервера: 10.3.13-MariaDB-log
--- Версия PHP: 7.1.32
+-- РҐРѕСЃС‚: 127.0.0.1:3306
+-- Р’СЂРµРјСЏ СЃРѕР·РґР°РЅРёСЏ: РСЋРЅ 09 2020 Рі., 16:26
+-- Р’РµСЂСЃРёСЏ СЃРµСЂРІРµСЂР°: 10.3.13-MariaDB-log
+-- Р’РµСЂСЃРёСЏ PHP: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `php_form`
+-- Р‘Р°Р·Р° РґР°РЅРЅС‹С…: `php_form`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `php_form`
+-- РЎС‚СЂСѓРєС‚СѓСЂР° С‚Р°Р±Р»РёС†С‹ `php_form`
 --
 
 CREATE TABLE `php_form` (
@@ -39,7 +39,7 @@ CREATE TABLE `php_form` (
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `user`
+-- РЎС‚СЂСѓРєС‚СѓСЂР° С‚Р°Р±Р»РёС†С‹ `user`
 --
 
 CREATE TABLE `user` (
@@ -49,40 +49,40 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `user`
+-- Р”Р°РјРї РґР°РЅРЅС‹С… С‚Р°Р±Р»РёС†С‹ `user`
 --
 
 INSERT INTO `user` (`id`, `name`, `password`) VALUES
 (1, 'admin', '202cb962ac59075b964b07152d234b70');
 
 --
--- Индексы сохранённых таблиц
+-- РРЅРґРµРєСЃС‹ СЃРѕС…СЂР°РЅС‘РЅРЅС‹С… С‚Р°Р±Р»РёС†
 --
 
 --
--- Индексы таблицы `php_form`
+-- РРЅРґРµРєСЃС‹ С‚Р°Р±Р»РёС†С‹ `php_form`
 --
 ALTER TABLE `php_form`
   ADD PRIMARY KEY (`id`);
 
 --
--- Индексы таблицы `user`
+-- РРЅРґРµРєСЃС‹ С‚Р°Р±Р»РёС†С‹ `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT РґР»СЏ СЃРѕС…СЂР°РЅС‘РЅРЅС‹С… С‚Р°Р±Р»РёС†
 --
 
 --
--- AUTO_INCREMENT для таблицы `php_form`
+-- AUTO_INCREMENT РґР»СЏ С‚Р°Р±Р»РёС†С‹ `php_form`
 --
 ALTER TABLE `php_form`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT для таблицы `user`
+-- AUTO_INCREMENT РґР»СЏ С‚Р°Р±Р»РёС†С‹ `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
