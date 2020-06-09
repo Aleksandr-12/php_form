@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июн 09 2020 г., 13:53
+-- Время создания: Июн 09 2020 г., 16:26
 -- Версия сервера: 10.3.13-MariaDB-log
 -- Версия PHP: 7.1.32
 
@@ -36,6 +36,25 @@ CREATE TABLE `php_form` (
   `form_time` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `user`
+--
+
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `user`
+--
+
+INSERT INTO `user` (`id`, `name`, `password`) VALUES
+(1, 'admin', '202cb962ac59075b964b07152d234b70');
+
 --
 -- Индексы сохранённых таблиц
 --
@@ -47,6 +66,12 @@ ALTER TABLE `php_form`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT для сохранённых таблиц
 --
 
@@ -55,6 +80,12 @@ ALTER TABLE `php_form`
 --
 ALTER TABLE `php_form`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT для таблицы `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
